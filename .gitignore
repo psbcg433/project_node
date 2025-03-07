@@ -1,0 +1,27 @@
+# Ignore all node_modules directories at any depth
+node_modules/
+**/node_modules/
+
+# Ignore all .env files at any depth
+.env
+**/.env
+
+# Ignore all log files at any depth
+logs/
+**/logs/
+*.log
+**/*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore specific environment files (optional)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
