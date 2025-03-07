@@ -28,31 +28,36 @@ crudapi/
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository (only the `01_node_crudapi` folder)**
    ```sh
-   git clone <repository-url>
-   cd crudapi
+   git clone --no-checkout --filter=blob:none https://github.com/psbcg433/project_node.git
+   cd project_node
+   git sparse-checkout init --cone
+   git sparse-checkout set 01_node_crudapi
+   git checkout
+   cd 01_node_crudapi
    ```
 
-2. Install dependencies:
+2. **Install dependencies**
    ```sh
    npm install
    ```
 
-3. Create a `.env` file in the root directory and add the following variables:
+3. **Create a `.env` file** in the root directory and add the following variables:
    ```env
    PORT=5000
-   DATABASE_URL=mongodb://localhost:27017
+   DATABASE_URL=mongodb://localhost:27017/studentsDB
    ```
 
-4. Start the server in development mode:
-   ```sh
-   npm run watch
-   ```
-   or start normally:
-   ```sh
-   npm run dev
-   ```
+4. **Start the server**
+   - In **development mode** (auto-reloads on changes):
+     ```sh
+     npm run dev
+     ```
+   - Or start normally:
+     ```sh
+     node server.js
+     ```
 
 ## API Endpoints
 
@@ -95,5 +100,4 @@ crudapi/
 This project is licensed under the ISC License.
 
 ## Author
-Your Name
-
+psbcg433
