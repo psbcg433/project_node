@@ -65,7 +65,7 @@ crudapi/
 **POST** `/students`
 ```json
 {
-  "name": "John Doe",
+  "name": "Basudev Sai Krishna",
   "age": 20,
   "fees": 6000.75
 }
@@ -81,7 +81,7 @@ crudapi/
 **PUT** `/students/:id`
 ```json
 {
-  "name": "Jane Doe",
+  "name": "Radha Krishnam",
   "age": 22
 }
 ```
