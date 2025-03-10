@@ -96,9 +96,7 @@ crudapi/
 - Mongoose
 - dotenv
 
-## License
-This project is licensed under the ISC License.
 
 ## Author
-Your Name
+psbcg433
 
