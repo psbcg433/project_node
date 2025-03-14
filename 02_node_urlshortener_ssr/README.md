@@ -38,10 +38,14 @@ This is a **Node.js URL Shortener** that allows users to shorten long URLs and r
 ---
 
 ## 🛠️ Installation & Setup
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/your-username/url-shortener-ssr.git
-cd url-shortener-ssr
+### 1. Clone the Repository
+```sh
+git clone --no-checkout --filter=blob:none https://github.com/psbcg433/project_node.git
+cd project_node
+git sparse-checkout init --cone
+git sparse-checkout set 03_node_sessionauth
+git checkout
+cd 03_node_sessionauth
 ```
 
 ### 2️⃣ Install Dependencies
