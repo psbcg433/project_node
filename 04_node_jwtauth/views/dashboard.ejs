@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.style.css">
+</head>
+<body>
+    <header class="appbar">
+        <h1>Dashboard</h1>
+        <div class="user-info">
+            <span>Welcome,</span>
+            <a href="/api/auth/logout" class="logout-btn">Logout</a>
+        </div>
+    </header>
+    <main class="dashboard-content">
+        <h2>JWT Auth Dashboard</h2>
+        <p>Discover a sleek interface and streamline your tasks effortlessly.</p>
+        <div class="post-container">
+            <% for(let i = 1; i <= 3; i++) { %>
+                <div class="post-card">
+                    <img src="https://source.unsplash.com/random/500x300" alt="Post Image">
+                    <h3>सत्यं शिवं सुंदरम् <%= i %></h3>
+                    <p>धैर्यं सर्वत्र साधनम्।</p>
+                </div>
+            <% } %>
+        </div>
+    </main>
+</body>
+</html>

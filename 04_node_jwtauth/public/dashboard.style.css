@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #1e1e2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+.appbar {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(255, 65, 108, 0.3);
+}
+
+.appbar h1 {
+    font-size: 24px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background: #ff4b2b;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #ff2e00;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    margin-top: 20px;
+}
+
+.dashboard-content h2 {
+    font-size: 28px;
+    background: -webkit-linear-gradient(45deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dashboard-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* Post Container */
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Post Cards */
+.post-card {
+    background: #2a2a3a;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 65, 108, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-card h3 {
+    margin: 10px 0;
+    color: #ff416c;
+}
+
+.post-card p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+}
